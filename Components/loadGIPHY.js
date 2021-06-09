@@ -32,7 +32,7 @@ const loadGIPHY = ({response, loader, isEmpty}) => {
             <FlatList
                 data={response}
                 renderItem={renderItem}
-                numColumns={3}
+                numColumns={2}
                 contentContainerStyle={styles.responseView}
                 keyExtractor={item => item.id}
             />
@@ -49,8 +49,8 @@ export default loadGIPHY;
 
 const styles = StyleSheet.create({
     imageContainer:{
-      width: 100, 
-      height: 100, 
+      width: 150, 
+      height: 150, 
       backgroundColor:'black',
       margin: 10,
     },
